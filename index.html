@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoctorLine24 - Your Health Companion</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Cambria', 'Cochin', Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            line-height: 1.6;
+            background: white;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #388E3C);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            float: left;
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin-left: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        /* Link Styling */
+        header ul li a {
+            color: rgb(89, 190, 230);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover Effect */
+        header ul li a:hover,
+        header ul li a:focus {
+            color: #FFD700; /* Gold color on hover */
+        }
+
+        /* Active Section Styling */
+        header ul li a.active {
+            color: #FFD700;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(76, 175, 80, 0.8), rgba(56, 142, 60, 0.8)),
+                url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #388E3C;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        #hero .btn:hover {
+            background: #2E7D32;
+            transform: translateY(-5px);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 0;
+        }
+
+        #about,
+        #services,
+        #contact,
+        #health-tips {
+            text-align: center;
+        }
+
+        #about h2,
+        #services h2,
+        #contact h2,
+        #health-tips h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        #about h2::after,
+        #services h2::after,
+        #contact h2::after,
+        #health-tips h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #4CAF50;
+            display: block;
+            margin: 0.5rem auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, #4CAF50, #388E3C);
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>DoctorLine24</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#health-tips">Health Tips</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Your Health, Our Priority</h2>
+            <p>DoctorLine24 is dedicated to providing you with trusted healthcare solutions for a better tomorrow.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>DoctorLine24 is a healthcare organization committed to delivering reliable health information, services, and
+            support to individuals worldwide. Our mission is to empower you to make informed decisions about your
+            health.</p>
+    </section>
+
+    <section id="services" class="container">
+        <h2>Our Services</h2>
+        <ul>
+            <li>24/7 Online Health Consultation</li>
+            <li>Health Articles and Resources</li>
+            <li>Personalized Wellness Plans</li>
+            <li>Access to Trusted Medical Experts</li>
+        </ul>
+    </section>
+
+    <section id="health-tips" class="container">
+        <h2>Health Tips</h2>
+        <h3>Diabetes</h3>
+        <ul>
+            <li>Maintain a balanced diet with low-sugar options.</li>
+            <li>Incorporate regular physical activity into your routine.</li>
+            <li>Monitor your blood sugar levels regularly.</li>
+        </ul>
+
+        <h3>Heart Health</h3>
+        <ul>
+            <li>Follow a diet rich in fruits, vegetables, and whole grains.</li>
+            <li>Limit saturated fats, salt, and processed foods.</li>
+            <li>Exercise regularly to strengthen your heart.</li>
+        </ul>
+
+        <h3>General Wellness</h3>
+        <ul>
+            <li>Stay hydrated by drinking at least 8 glasses of water daily.</li>
+            <li>Get enough sleep to help your body recharge.</li>
+            <li>Practice stress management techniques like meditation or yoga.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, reach out to us:</p>
+        <ul>
+            <li>Email: support@doctorline24.com</li>
+            <li>Phone: +918792378034</li>
+            <li>Address: - -</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DoctorLine24. All rights reserved. Created by <strong>Prateek</strong>.</p>
+    </footer>
+</body>
+
+</html>
